@@ -28,11 +28,120 @@
           <p class="text-left">É possivel criar graficos em barras na horizontal e vertical , alem de graficos em pizza e linha. <br>O site tambem permite mudar o espaçamento entre as colunas e fazer uma configuração de cores, o gerador de graficos da suporte até 10 entradas para voce montar e personalizar seu grafico. </p>
         </div>
 
-        <div class="container-fluid w-75" id="formulario-grafico" style="height: 10vw;min-height:200px;background-color:black;margin-top: 6vw;">
+        <div class="container-fluid w-75 p-3" id="formulario-grafico" style="background-color:rgba(0,0,0,0.1);margin-top: 6vw;">
+            <div class="text-center">
+                          <form>
+                            <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;">Selecione o tipo do grafico :</p>
+                                      <select style="margin-left:15px;margin-top: 15px;" required name="classe">
+                                        <option value="todos">Colunas</option>
+                                        <option value="fotos">Pizza</option>
+                                        <option value="trabalho">Linha</option>
+                                      </select>
+                           </div>
+                            <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                        <p style="display: inline;">Quantos elementos utilizara :</p>
+                                        <select style="margin-left:15px;margin-top: 15px;display: inline;" required name="classe">
+                                          <option value="i1">1 </option>
+                                          <option value="i2">2 </option>
+                                          <option value="i3">3 </option>
+                                          <option value="i4">4 </option>
+                                          <option value="i5">5 </option>
+                                          <option value="i6">6 </option>
+                                          <option value="i7">7 </option>
+                                          <option value="i8">8 </option>
+                                          <option value="i9">9 </option>
+                                          <option value="i10">10 </option>
+                                          
+                                        </select>
+                           </div>
+                        <hr>
+                        <div id="elemento1" >
+                          <p>Insira os valores do elemento 1 abaixo :</p>
+
+                          <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                              <p style="display:inline;">Nome :</p>
+                              <input  type="text" name="valnome" value="nome" style="display:inline;">
+                          </div>
+                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                              <p style="display:inline;">Valor numerico :</p>
+                              <input  type="number" name="valnum" value="val numerico" style="display:inline;">
+                          </div>
+                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                            <p style="display:inline;">Valor Data :</p>
+                            <input  type="date" name="valdata" value="val data" style="display:inline;">
+                          </div>
+                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                            <p style="display:inline;">Cor :</p>
+                            <select style="margin-left:15px;margin-top: 10px;display: inline;" required name="classe">
+                              <option value="c1">Branco</option>
+                              <option value="c2">Amarelo </option>
+                              <option value="c3">Preto </option>
+                              <option value="c4">Verde </option>
+                              <option value="c5">Azul-Escuro </option>
+                              <option value="c6">Roxo </option>
+                              <option value="c7">Salmon </option>
+                              <option value="c8">Azul-Claro </option>
+                              <option value="c9">Laranja </option>
+                              <option value="c10">Cinza </option>
+                              <option value="c11">Vermelho </option>
+                            </select>
+                          </div>
+
+
+                        </div>
 
 
 
-        </div>
+                        <div id="elemento2">
+
+
+                        </div>
+                        <div id="elemento3">
+
+
+                        </div>
+                        <div id="elemento4">
+
+
+                        </div>
+                        <div id="elemento5">
+
+
+                        </div>
+                        <div id="elemento6">
+
+
+                        </div>
+                        <div id="elemento7">
+
+
+                        </div>
+                        <div id="elemento8">
+
+
+                        </div>
+                        <div id="elemento9">
+
+
+                        </div>
+                        <div id="elemento10">
+
+
+                        </div>
+
+                          </form>
+          </div>
+
+          </div>
+
+          <div class="text-center " style="margin-top:70px;">
+            <div class="btn-group ">
+                <button class="btn btn-outline-secondary"  onclick="">Criar grafico</button>
+                <button class="btn btn-outline-secondary"  onclick="">Resetar valores</button>
+                <button class="btn btn-outline-secondary" onclick="">Baixar grafico</button>
+            </div>
+          </div>
 
           <div class="container w-50">
             <br><br>
