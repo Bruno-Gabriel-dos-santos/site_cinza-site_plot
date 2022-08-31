@@ -55,9 +55,45 @@
                                                     
                                                   </select>
                                     </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;margin-left: 80px;">Titulo :</p>
+                                      <input type="text" >
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;margin-left: 15px;">Legenda eixo X :</p>
+                                      <input type="text" >
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;margin-left: 15px;">Legenda eixo Y :</p>
+                                      <input type="text">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;">Escala numerica X:</p>
+                                      <input type="number">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;">Escala numerica Y:</p>
+                                      <input type="number">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;">valor eixo X :</p>
+                                      <select style="display: inline;" id="eixo-x">
+                                        <option value="xnumerico">Val numerico</option>
+                                        <option value="xdata">Data </option>
+                                        <option value="xindice">Indice </option>
+                                      </select>
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display: inline;">valor eixo Y :</p>
+                                      <select style="display: inline;" id="eixo-y">
+                                        <option value="ynumerico">Val numerico</option>
+                                        <option value="ydata">Data </option>
+                                        <option value="yindice">Indice </option>
+                                      </select>
+                                    </div>
                                   <hr>
                                   <div id="seletores" >
-                                    <p>Insira os valores do elemento <span>
+                                    <p>Insira os valores do elemento<span>
                                       <select style="margin-left:10px;margin-right:10px;margin-top: 15px;display: inline;" id="seletoresv">
                                       <option style="display: block;"id="elem1" value="v1"> 1 </option>
                                       <option style="display: none;" id="elem2" value="v2"> 2 </option>
@@ -70,7 +106,7 @@
                                       <option style="display: none;" id="elem9" value="v9"> 9 </option>
                                       <option style="display: none;" id="elem10"value="v10"> 10 </option>
                                       
-                                    </select> </span> abaixo :</p>
+                                    </select></span>abaixo :</p>
 
                                     <hr>
 
@@ -79,11 +115,15 @@
                                                       <p style="font-size:20px;">Elemento 1</p>
                                                     <div  style="width: 350px;display: inline-block;margin-top: 10px;">
                                                         <p style="display:inline;margin-left: 50px;">Nome :</p>
-                                                        <input  type="text" name="valnome" value="nome" style="display:inline;">
+                                                        <input  type="text" value="nome" style="display:inline;">
                                                     </div>
                                                     <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                                         <p style="display:inline;">Val Numerico :</p>
-                                                        <input  type="number" name="valnum"  style="display:inline;">
+                                                        <input  type="number" style="display:inline;">
+                                                    </div>
+                                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                      <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                                      <input  type="number"  style="display:inline;">
                                                     </div>
                                                     <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                                       <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
@@ -120,6 +160,10 @@
                                                     <input  type="number" name="valnum2"  style="display:inline;">
                                                 </div>
                                                 <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                  <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                                  <input  type="number"  style="display:inline;">
+                                                </div>
+                                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                                   <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
                                                   <input  type="date" name="valdata2"  style="display:inline;height: 30px;width: 190px;">
                                                 </div>
@@ -154,6 +198,10 @@
                                                   <input  type="number" name="valnum3"  style="display:inline;">
                                               </div>
                                               <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                                <input  type="number"  style="display:inline;">
+                                              </div>
+                                              <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                                 <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
                                                 <input  type="date" name="valdata3"  style="display:inline;height: 30px;width: 190px;">
                                               </div>
@@ -186,6 +234,10 @@
                                             <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                                 <p style="display:inline;">Val Numerico :</p>
                                                 <input  type="number" name="valnum4"  style="display:inline;">
+                                            </div>
+                                            <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                              <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                              <input  type="number"  style="display:inline;">
                                             </div>
                                             <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                               <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
@@ -223,6 +275,10 @@
                                               <input  type="number" name="valnum5"  style="display:inline;">
                                           </div>
                                           <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                            <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                            <input  type="number"  style="display:inline;">
+                                          </div>
+                                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                             <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
                                             <input  type="date" name="valdata5"  style="display:inline;height: 30px;width: 190px;">
                                           </div>
@@ -256,6 +312,10 @@
                                         <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                             <p style="display:inline;">Val Numerico :</p>
                                             <input  type="number" name="valnum6"  style="display:inline;">
+                                        </div>
+                                        <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                          <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                          <input  type="number"  style="display:inline;">
                                         </div>
                                         <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                           <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
@@ -292,6 +352,10 @@
                                       <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                           <p style="display:inline;">Val Numerico :</p>
                                           <input  type="number" name="valnum7"  style="display:inline;">
+                                      </div>
+                                      <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                        <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                        <input  type="number"  style="display:inline;">
                                       </div>
                                       <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                         <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
@@ -332,6 +396,10 @@
                                         <input  type="number" name="valnum8"  style="display:inline;">
                                     </div>
                                     <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                      <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                      <input  type="number"  style="display:inline;">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                       <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
                                       <input  type="date" name="valdata8"  style="display:inline;height: 30px;width: 190px;">
                                     </div>
@@ -366,6 +434,10 @@
                                   <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                       <p style="display:inline;">Val Numerico :</p>
                                       <input  type="number" name="valnum9"  style="display:inline;">
+                                  </div>
+                                  <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                    <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                    <input  type="number"  style="display:inline;">
                                   </div>
                                   <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                     <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
@@ -405,6 +477,10 @@
                                     <input  type="number" name="valnum10"  style="display:inline;">
                                 </div>
                                 <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                  <p style="display:inline;margin-left: 45px;">*Indice :</p>
+                                  <input  type="number"  style="display:inline;">
+                                </div>
+                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
                                   <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
                                   <input  type="date" name="valdata5"  style="display:inline;height: 30px;width: 190px;">
                                 </div>
@@ -438,7 +514,7 @@
 
           <div class="text-center " style="margin-top:70px;">
             <div class="btn-group ">
-                <button class="btn btn-outline-secondary"  onclick="">Criar grafico</button>
+                <button class="btn btn-outline-secondary"  onclick="">Visualizar grafico</button>
                 <button class="btn btn-outline-secondary"  onclick="">Resetar valores</button>
                 <button class="btn btn-outline-secondary" onclick="">Baixar grafico</button>
             </div>
