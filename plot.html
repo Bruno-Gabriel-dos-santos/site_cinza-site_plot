@@ -30,108 +30,409 @@
 
         <div class="container-fluid w-75 p-3" id="formulario-grafico" style="background-color:rgba(0,0,0,0.1);margin-top: 6vw;">
             <div class="text-center">
-                          <form>
-                            <div style="width: 350px;display: inline-block;margin-top: 10px;">
-                                      <p style="display: inline;">Selecione o tipo do grafico :</p>
-                                      <select style="margin-left:15px;margin-top: 15px;" required name="classe">
-                                        <option value="todos">Colunas</option>
-                                        <option value="fotos">Pizza</option>
-                                        <option value="trabalho">Linha</option>
-                                      </select>
-                           </div>
-                            <div style="width: 350px;display: inline-block;margin-top: 10px;">
-                                        <p style="display: inline;">Quantos elementos utilizara :</p>
-                                        <select style="margin-left:15px;margin-top: 15px;display: inline;" required name="classe">
-                                          <option value="i1">1 </option>
-                                          <option value="i2">2 </option>
-                                          <option value="i3">3 </option>
-                                          <option value="i4">4 </option>
-                                          <option value="i5">5 </option>
-                                          <option value="i6">6 </option>
-                                          <option value="i7">7 </option>
-                                          <option value="i8">8 </option>
-                                          <option value="i9">9 </option>
-                                          <option value="i10">10 </option>
-                                          
+                                                                  
+                                      <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                                <p style="display: inline;">Selecione o tipo do grafico :</p>
+                                                <select style="margin-left:15px;margin-top: 15px;" required name="classe">
+                                                  <option value="todos">Colunas</option>
+                                                  <option value="fotos">Pizza</option>
+                                                  <option value="trabalho">Linha</option>
+                                                </select>
+                                    </div>
+                                      <div style="width: 350px;display: inline-block;margin-top: 10px;">
+                                                  <p style="display: inline;">Quantos elementos utilizara :</p>
+                                                  <select style="margin-left:15px;margin-top: 15px;display: inline;" required name="classe" id="qntclass">
+                                                    <option value="i1">1 </option>
+                                                    <option value="i2">2 </option>
+                                                    <option value="i3">3 </option>
+                                                    <option value="i4">4 </option>
+                                                    <option value="i5">5 </option>
+                                                    <option value="i6">6 </option>
+                                                    <option value="i7">7 </option>
+                                                    <option value="i8">8 </option>
+                                                    <option value="i9">9 </option>
+                                                    <option value="i10">10 </option>
+                                                    
+                                                  </select>
+                                    </div>
+                                  <hr>
+                                  <div id="seletores" >
+                                    <p>Insira os valores do elemento <span>
+                                      <select style="margin-left:10px;margin-right:10px;margin-top: 15px;display: inline;" id="seletoresv">
+                                      <option style="display: block;"id="elem1" value="v1"> 1 </option>
+                                      <option style="display: none;" id="elem2" value="v2"> 2 </option>
+                                      <option style="display: none;" id="elem3" value="v3"> 3 </option>
+                                      <option style="display: none;" id="elem4" value="v4"> 4 </option>
+                                      <option style="display: none;" id="elem5" value="v5"> 5 </option>
+                                      <option style="display: none;" id="elem6" value="v6"> 6 </option>
+                                      <option style="display: none;" id="elem7" value="v7"> 7 </option>
+                                      <option style="display: none;" id="elem8" value="v8"> 8 </option>
+                                      <option style="display: none;" id="elem9" value="v9"> 9 </option>
+                                      <option style="display: none;" id="elem10"value="v10"> 10 </option>
+                                      
+                                    </select> </span> abaixo :</p>
+
+                                    <hr>
+
+
+                                                  <div id="seletor1" style="display:block ;">
+                                                      <p style="font-size:20px;">Elemento 1</p>
+                                                    <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                                        <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                                        <input  type="text" name="valnome" value="nome" style="display:inline;">
+                                                    </div>
+                                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                        <p style="display:inline;">Val Numerico :</p>
+                                                        <input  type="number" name="valnum"  style="display:inline;">
+                                                    </div>
+                                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                      <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                                      <input  type="date" name="valdata"  style="display:inline;height: 30px;width: 190px;">
+                                                    </div>
+                                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                      <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                                      <select style="display: inline;height: 30px;width: 190px;" required name="classe">
+                                                        <option value="c1">Branco</option>
+                                                        <option value="c2">Amarelo </option>
+                                                        <option value="c3">Preto </option>
+                                                        <option value="c4">Verde </option>
+                                                        <option value="c5">Azul-Escuro </option>
+                                                        <option value="c6">Roxo </option>
+                                                        <option value="c7">Salmon </option>
+                                                        <option value="c8">Azul-Claro </option>
+                                                        <option value="c9">Laranja </option>
+                                                        <option value="c10">Cinza </option>
+                                                        <option value="c11">Vermelho </option>
+                                                      </select>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div id="seletor2" style="display:none ;">
+                                                  <p style="font-size:20px;">Elemento 2</p>
+                                                <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                                    <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                                    <input  type="text" name="valnome2" value="nome" style="display:inline;">
+                                                </div>
+                                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                    <p style="display:inline;">Val Numerico :</p>
+                                                    <input  type="number" name="valnum2"  style="display:inline;">
+                                                </div>
+                                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                  <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                                  <input  type="date" name="valdata2"  style="display:inline;height: 30px;width: 190px;">
+                                                </div>
+                                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                  <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                                  <select style="display: inline;height: 30px;width: 190px;" required name="classe2">
+                                                    <option value="c1">Branco</option>
+                                                    <option value="c2">Amarelo </option>
+                                                    <option value="c3">Preto </option>
+                                                    <option value="c4">Verde </option>
+                                                    <option value="c5">Azul-Escuro </option>
+                                                    <option value="c6">Roxo </option>
+                                                    <option value="c7">Salmon </option>
+                                                    <option value="c8">Azul-Claro </option>
+                                                    <option value="c9">Laranja </option>
+                                                    <option value="c10">Cinza </option>
+                                                    <option value="c11">Vermelho </option>
+                                                  </select>
+                                                </div>
+
+                                              </div>
+                                              
+
+                                              <div id="seletor3" style="display:none ;">
+                                                <p style="font-size:20px;">Elemento 3</p>
+                                              <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                                  <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                                  <input  type="text" name="valnome3" value="nome" style="display:inline;">
+                                              </div>
+                                              <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                  <p style="display:inline;">Val Numerico :</p>
+                                                  <input  type="number" name="valnum3"  style="display:inline;">
+                                              </div>
+                                              <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                                <input  type="date" name="valdata3"  style="display:inline;height: 30px;width: 190px;">
+                                              </div>
+                                              <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                                <select style="display: inline;height: 30px;width: 190px;" required name="classe3">
+                                                  <option value="c1">Branco</option>
+                                                  <option value="c2">Amarelo </option>
+                                                  <option value="c3">Preto </option>
+                                                  <option value="c4">Verde </option>
+                                                  <option value="c5">Azul-Escuro </option>
+                                                  <option value="c6">Roxo </option>
+                                                  <option value="c7">Salmon </option>
+                                                  <option value="c8">Azul-Claro </option>
+                                                  <option value="c9">Laranja </option>
+                                                  <option value="c10">Cinza </option>
+                                                  <option value="c11">Vermelho </option>
+                                                </select>
+                                              </div>
+
+                                            </div>
+                                            
+
+                                            <div id="seletor4" style="display:none ;">
+                                              <p style="font-size:20px;">Elemento 4</p>
+                                            <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                                <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                                <input  type="text" name="valnome4" value="nome" style="display:inline;">
+                                            </div>
+                                            <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                                <p style="display:inline;">Val Numerico :</p>
+                                                <input  type="number" name="valnum4"  style="display:inline;">
+                                            </div>
+                                            <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                              <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                              <input  type="date" name="valdata4"  style="display:inline;height: 30px;width: 190px;">
+                                            </div>
+                                            <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                              <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                              <select style="display: inline;height: 30px;width: 190px;" required name="classe4">
+                                                <option value="c1">Branco</option>
+                                                <option value="c2">Amarelo </option>
+                                                <option value="c3">Preto </option>
+                                                <option value="c4">Verde </option>
+                                                <option value="c5">Azul-Escuro </option>
+                                                <option value="c6">Roxo </option>
+                                                <option value="c7">Salmon </option>
+                                                <option value="c8">Azul-Claro </option>
+                                                <option value="c9">Laranja </option>
+                                                <option value="c10">Cinza </option>
+                                                <option value="c11">Vermelho </option>
+                                              </select>
+                                            </div>
+
+                                          </div>
+                                        
+
+
+                                          <div id="seletor5" style="display:none ;">
+                                            <p style="font-size:20px;">Elemento 5</p>
+                                          <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                              <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                              <input  type="text" name="valnome5" value="nome" style="display:inline;">
+                                          </div>
+                                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                              <p style="display:inline;">Val Numerico :</p>
+                                              <input  type="number" name="valnum5"  style="display:inline;">
+                                          </div>
+                                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                            <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                            <input  type="date" name="valdata5"  style="display:inline;height: 30px;width: 190px;">
+                                          </div>
+                                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                            <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                            <select style="display: inline;height: 30px;width: 190px;" required name="classe5">
+                                              <option value="c1">Branco</option>
+                                              <option value="c2">Amarelo </option>
+                                              <option value="c3">Preto </option>
+                                              <option value="c4">Verde </option>
+                                              <option value="c5">Azul-Escuro </option>
+                                              <option value="c6">Roxo </option>
+                                              <option value="c7">Salmon </option>
+                                              <option value="c8">Azul-Claro </option>
+                                              <option value="c9">Laranja </option>
+                                              <option value="c10">Cinza </option>
+                                              <option value="c11">Vermelho </option>
+                                            </select>
+                                          </div>
+
+                                        </div>
+                                        
+
+
+                                        <div id="seletor6" style="display:none ;">
+                                          <p style="font-size:20px;">Elemento 6</p>
+                                        <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                            <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                            <input  type="text" name="valnome6" value="nome" style="display:inline;">
+                                        </div>
+                                        <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                            <p style="display:inline;">Val Numerico :</p>
+                                            <input  type="number" name="valnum6"  style="display:inline;">
+                                        </div>
+                                        <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                          <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                          <input  type="date" name="valdata6"  style="display:inline;height: 30px;width: 190px;">
+                                        </div>
+                                        <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                          <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                          <select style="display: inline;height: 30px;width: 190px;" required name="classe6">
+                                            <option value="c1">Branco</option>
+                                            <option value="c2">Amarelo </option>
+                                            <option value="c3">Preto </option>
+                                            <option value="c4">Verde </option>
+                                            <option value="c5">Azul-Escuro </option>
+                                            <option value="c6">Roxo </option>
+                                            <option value="c7">Salmon </option>
+                                            <option value="c8">Azul-Claro </option>
+                                            <option value="c9">Laranja </option>
+                                            <option value="c10">Cinza </option>
+                                            <option value="c11">Vermelho </option>
+                                          </select>
+                                        </div>
+
+                                      </div>
+                                      
+
+
+
+                                      <div id="seletor7" style="display:none ;">
+                                        <p style="font-size:20px;">Elemento 7</p>
+                                      <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                          <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                          <input  type="text" name="valnome7" value="nome" style="display:inline;">
+                                      </div>
+                                      <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                          <p style="display:inline;">Val Numerico :</p>
+                                          <input  type="number" name="valnum7"  style="display:inline;">
+                                      </div>
+                                      <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                        <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                        <input  type="date" name="valdata7"  style="display:inline;height: 30px;width: 190px;">
+                                      </div>
+                                      <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                        <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                        <select style="display: inline;height: 30px;width: 190px;" required name="classe7">
+                                          <option value="c1">Branco</option>
+                                          <option value="c2">Amarelo </option>
+                                          <option value="c3">Preto </option>
+                                          <option value="c4">Verde </option>
+                                          <option value="c5">Azul-Escuro </option>
+                                          <option value="c6">Roxo </option>
+                                          <option value="c7">Salmon </option>
+                                          <option value="c8">Azul-Claro </option>
+                                          <option value="c9">Laranja </option>
+                                          <option value="c10">Cinza </option>
+                                          <option value="c11">Vermelho </option>
                                         </select>
-                           </div>
-                        <hr>
-                        <div id="elemento1" >
-                          <p>Insira os valores do elemento 1 abaixo :</p>
+                                      </div>
 
-                          <div  style="width: 350px;display: inline-block;margin-top: 10px;">
-                              <p style="display:inline;">Nome :</p>
-                              <input  type="text" name="valnome" value="nome" style="display:inline;">
-                          </div>
-                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
-                              <p style="display:inline;">Valor numerico :</p>
-                              <input  type="number" name="valnum" value="val numerico" style="display:inline;">
-                          </div>
-                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
-                            <p style="display:inline;">Valor Data :</p>
-                            <input  type="date" name="valdata" value="val data" style="display:inline;">
-                          </div>
-                          <div style="width: 350px;display: inline-block;margin-top: 10px; ">
-                            <p style="display:inline;">Cor :</p>
-                            <select style="margin-left:15px;margin-top: 10px;display: inline;" required name="classe">
-                              <option value="c1">Branco</option>
-                              <option value="c2">Amarelo </option>
-                              <option value="c3">Preto </option>
-                              <option value="c4">Verde </option>
-                              <option value="c5">Azul-Escuro </option>
-                              <option value="c6">Roxo </option>
-                              <option value="c7">Salmon </option>
-                              <option value="c8">Azul-Claro </option>
-                              <option value="c9">Laranja </option>
-                              <option value="c10">Cinza </option>
-                              <option value="c11">Vermelho </option>
-                            </select>
-                          </div>
-
-
-                        </div>
+                                    </div>
+                                    
 
 
 
-                        <div id="elemento2">
 
 
-                        </div>
-                        <div id="elemento3">
+                                    <div id="seletor8" style="display:none ;">
+                                      <p style="font-size:20px;">Elemento 8</p>
+                                    <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                        <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                        <input  type="text" name="valnome8" value="nome" style="display:inline;">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                        <p style="display:inline;">Val Numerico :</p>
+                                        <input  type="number" name="valnum8"  style="display:inline;">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                      <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                      <input  type="date" name="valdata8"  style="display:inline;height: 30px;width: 190px;">
+                                    </div>
+                                    <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                      <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                      <select style="display: inline;height: 30px;width: 190px;" required name="classe8">
+                                        <option value="c1">Branco</option>
+                                        <option value="c2">Amarelo </option>
+                                        <option value="c3">Preto </option>
+                                        <option value="c4">Verde </option>
+                                        <option value="c5">Azul-Escuro </option>
+                                        <option value="c6">Roxo </option>
+                                        <option value="c7">Salmon </option>
+                                        <option value="c8">Azul-Claro </option>
+                                        <option value="c9">Laranja </option>
+                                        <option value="c10">Cinza </option>
+                                        <option value="c11">Vermelho </option>
+                                      </select>
+                                    </div>
+
+                                  </div>
+                                  
 
 
-                        </div>
-                        <div id="elemento4">
+
+                                  <div id="seletor9" style="display:none ;">
+                                    <p style="font-size:20px;">Elemento 9</p>
+                                  <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                      <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                      <input  type="text" name="valnome9" value="nome" style="display:inline;">
+                                  </div>
+                                  <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                      <p style="display:inline;">Val Numerico :</p>
+                                      <input  type="number" name="valnum9"  style="display:inline;">
+                                  </div>
+                                  <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                    <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                    <input  type="date" name="valdata9"  style="display:inline;height: 30px;width: 190px;">
+                                  </div>
+                                  <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                    <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                    <select style="display: inline;height: 30px;width: 190px;" required name="classe9">
+                                      <option value="c1">Branco</option>
+                                      <option value="c2">Amarelo </option>
+                                      <option value="c3">Preto </option>
+                                      <option value="c4">Verde </option>
+                                      <option value="c5">Azul-Escuro </option>
+                                      <option value="c6">Roxo </option>
+                                      <option value="c7">Salmon </option>
+                                      <option value="c8">Azul-Claro </option>
+                                      <option value="c9">Laranja </option>
+                                      <option value="c10">Cinza </option>
+                                      <option value="c11">Vermelho </option>
+                                    </select>
+                                  </div>
+
+                                </div>
+                                
 
 
-                        </div>
-                        <div id="elemento5">
 
 
-                        </div>
-                        <div id="elemento6">
+                                <div id="seletor10" style="display:none ;">
+                                  <p style="font-size:20px;">Elemento 10</p>
+                                <div  style="width: 350px;display: inline-block;margin-top: 10px;">
+                                    <p style="display:inline;margin-left: 50px;">Nome :</p>
+                                    <input  type="text" name="valnome10" value="nome" style="display:inline;">
+                                </div>
+                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                    <p style="display:inline;">Val Numerico :</p>
+                                    <input  type="number" name="valnum10"  style="display:inline;">
+                                </div>
+                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                  <p style="display:inline;margin-left: 15px;">*Valor Data :</p>
+                                  <input  type="date" name="valdata5"  style="display:inline;height: 30px;width: 190px;">
+                                </div>
+                                <div style="width: 350px;display: inline-block;margin-top: 10px; ">
+                                  <p style="display:inline;margin-left: 70px;">Cor :</p>
+                                  <select style="display: inline;height: 30px;width: 190px;" required name="classe10">
+                                    <option value="c1">Branco</option>
+                                    <option value="c2">Amarelo </option>
+                                    <option value="c3">Preto </option>
+                                    <option value="c4">Verde </option>
+                                    <option value="c5">Azul-Escuro </option>
+                                    <option value="c6">Roxo </option>
+                                    <option value="c7">Salmon </option>
+                                    <option value="c8">Azul-Claro </option>
+                                    <option value="c9">Laranja </option>
+                                    <option value="c10">Cinza </option>
+                                    <option value="c11">Vermelho </option>
+                                  </select>
+                                </div>
 
+                              </div>
+                              
 
-                        </div>
-                        <div id="elemento7">
+                                  </div>
+                                                                
 
-
-                        </div>
-                        <div id="elemento8">
-
-
-                        </div>
-                        <div id="elemento9">
-
-
-                        </div>
-                        <div id="elemento10">
-
-
-                        </div>
-
-                          </form>
-          </div>
+                                                        
+            </div>
 
           </div>
 
@@ -170,6 +471,7 @@
               
         </div>
 
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
